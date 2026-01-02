@@ -1,0 +1,162 @@
+.fejlec {
+  background: linear-gradient(120deg, #171717, #1a1c1d);
+  color: white;
+  padding: 60px 20px;
+}
+
+.doboz img {
+  height: 250px;
+  object-fit: contain;
+}
+
+.carousel-item {
+  text-align: center;
+  padding: 30px;
+}
+
+.carousel-img {
+  height: 550px;
+  width: auto;
+  margin: auto;
+  object-fit: contain;  
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease;
+}
+
+.carousel-img:hover {
+  height: 555px;
+  transform: scale(1.03);
+}
+
+.animeLista {
+  background: #edeeeffa;
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+.animeLista h3 {
+  margin-bottom: 15px;
+}
+
+.animeLista p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.kartya {
+  cursor: pointer;
+  background-color: rgba(240, 235, 235, 0.808);
+  transition: transform 0.2s ease;
+}
+
+.kartya:hover {
+  transform: scale(1.03);
+  background-color: rgba(210, 204, 204, 0.808);
+  transition: transform 0.2s ease;
+}
+
+.footerKep {
+  height: 200px;
+  margin: auto;
+}
+
+#keszito {
+  margin-left: 70%;
+  color: white;
+  font-weight: lighter;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  color: white;
+  background-color: #111111;
+}
+
+.erdSotet {
+  background-color: rgb(218, 214, 214);
+}
+.erdVilagos {
+  background-color: #f8f9fa;
+}
+
+#utolso {
+  margin-bottom: 50px;
+    border-radius: 0px 0px 10px 10px ;
+}
+
+#elso {
+    border-radius: 10px 10px 0px 0px;
+}
+
+#erdekessegek {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  width: 970px;
+  margin-left: 7%;
+  border: solid none;
+  border-radius: 10px;
+}
+
+.navbarKep {
+  width: 50px;
+  height: 50px;
+}
+
+#modalKep {
+  width: 500px;
+  margin-left: 17%;
+  margin-bottom: 10%;
+  border-radius: 25px;
+}
+
+#modalLeiras {
+  font-style: italic;
+  text-align: justify;
+  text-indent: 20px;
+}
+
+.carousel-control-prev-icon {
+    height: 70px;
+    width: 70px;
+    outline: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+}
+
+.carousel-control-next-icon {
+    height: 70px;
+    width: 70px;
+    outline: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+}
+
+.list-group {
+  background-color:  #edeeeffa;
+}
+
+.navbar {
+  background-color: #111111;
+}
+
+#hibaUzenet {
+  background-color: rgb(234, 23, 23);
+  width: 20%;
+  margin-left: 16%;
+  height: 60px;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: lighter;
+  color: white;
+  font-style: italic;
+  border-radius: 25px;
+}
+
+#kbemenet {
+  font-style: italic;
+  font-weight: lighter;
+}

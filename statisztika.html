@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Naruto</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/kepek/favicon.png">
+</head>
+<style>
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.187), rgba(0, 0, 0, 0.193)), url(/kepek/hatterStat.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-attachment: local;
+  }
+</style>
+
+<body>
+<nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img class="navbarKep" src="/kepek/favicon.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Főoldal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="animek.html">Animék</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="statisztika.html">Statisztika</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="fejlec text-center">
+  <h1 style="font-weight: lighter;">Anime pontszámok</h1>
+</header>
+
+<div id="imdbTabla">
+  <div class="container my-5 text-center">
+    <div id="statTabla"></div>
+
+  </div>
+</div>
+
+
+<section class="container my-5" style="background-color: linear-gradient(rgba(0, 0, 0, 0.187), rgba(0, 0, 0, 0.193));">
+  <h1 class="text-center" style="color: white; font-weight: lighter; margin-bottom: 50px; margin-top: 67px;"><i>Anime lista</i></h1>
+
+  <div class="mb-3">
+    <input type="text" id="kbemenet" class="form-control" placeholder="𝙺𝚎𝚛𝚎𝚜é𝚜 𝚌í𝚖 𝚊𝚕𝚊𝚙𝚓á𝚗...">
+  </div>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th style="font-weight: bolder;">Cím</th>
+        <th style="font-weight: bolder;">Év</th>
+        <th style="font-weight: bolder;">Stúdió</th>
+        <th style="font-weight: bolder;">Forrás</th>
+        <th style="font-weight: bolder;">IMDb</th>
+        <th style="font-weight: bolder;">Rank</th>
+      </tr>
+    </thead>
+    <tbody id="keresoTabla"></tbody>
+
+  </table>
+</section>
+
+<p id="hibaUzenet" style="display: none;">Nincs találat</p>
+
+<script src="js/app.js"></script>
+
+<script>
+  statisztika();
+  keresoTabla();
+  tablaRajzol();
+</script>
+
+<footer>
+  <a title="Wikipédia" target="_blank" href="https://hu.wikipedia.org/wiki/Naruto_(manga)"><img class="footerKep" src="/kepek/footer.png" alt=""></a></p>
+  <h3 id="keszito"><b>Készítette:</b> <i>Duró Zalán</i></h3>    
+</footer>
+</body>
+</html>
