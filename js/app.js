@@ -131,7 +131,7 @@ async function tablaRajzol(listaElem) {
     tabla.innerHTML += `
       <tr>
         <td><i>${listaElem[i].title}</i></td>
-        <td>${listaElem[i].year || "?"}</td>
+        <td>${listaElem[i].aired.prop.from.year || "?"}</td>
         <td>${listaElem[i].studios.map(s => s.name).join(", ")}</td>
         <td>${listaElem[i].source}</td>
         <td><b>${listaElem[i].score || "N/A"}</b></td>
@@ -158,6 +158,7 @@ if (bemenet) {
     }
   });
 }
+
 
 
 
